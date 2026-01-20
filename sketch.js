@@ -34,8 +34,8 @@ console.log(names.indexOf("mary"));
 
 // Copies part of an array specified with index num
 let fruit = ["apple", "banana", "orange", "pear"]
-let citrus = fruit.slice(1, 3,);
-console.log(citrus);
+let citru = fruit.slice(1, 3);
+console.log(citru);
 
 
 fruits.splice(1,1);
@@ -77,18 +77,24 @@ for (let i = 0; i< basket.length; i++){
 };
 
 // Check if orange exists
-for (let i =0; i < basket)
-console.log(basket.indexOf("orange"));
-console.log("Orange found at index 3");
+console.log("Orange found at Index: ", basket.indexOf("orange"));
 
 
+// If doesnt exist
+for (let i =0; i < basket.length; i++){
+	if (basket[i] != "orange"){
+		console.log("Orange doesnt exist")
+	};
+};
 
+// New array of only middle 2 items
 
+// find index of middle item in array
+let middle = basket.length / 2; 
 
-
-
-
-
+// Slice middle -1 and middle + 1 to get middle 2 items of array
+let citrus = basket.slice(middle -1, middle + 1);
+console.log(citrus);
 
 
 function setup() {
